@@ -77,7 +77,7 @@
 ### Before the HSRP failover
 * **In these screenshots you can see how the Host/PC has got IP from DHCP**
 * **How they are pinging with ISP**
-* **And the most imp. "route"**
+* **And the most imp. "route"** (How traffic is going)
 
 * VLAN-10 or 20
 * https://github.com/rXchauhan/A-High-Availability-Multi-VLAN-Campus-Network-with-DHCP-DNS-NAT-Security/blob/5db15ec2a15742ed8b0120a5f8ce5d8594589122/03-%20ScreenShots/V.10'PC%20Otpt%20Before%20Act.%20chng.png
@@ -102,9 +102,9 @@
 
 ### Note:- 
 * Now you can see in both case they are pinging with ISPs IP 100.100.100.1
-* But the differnece is that route is change in both case because they have differnet-different Active & Standby in both case. 
+* But the differnece is that, the route is changing in both case because they have differnet-different Active & Standby in both case. 
 
-## 🚀 Test the followinf:
+## 🚀 Test the following:
 * HSRP Active/Standby failover
 * DHCP Auto IP Allocation
 * Internet Ping via NAT
