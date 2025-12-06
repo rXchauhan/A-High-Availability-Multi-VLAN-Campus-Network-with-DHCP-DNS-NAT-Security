@@ -30,6 +30,9 @@
 | 40  |    10.10.40.1  |  10.10.40.2  |  255.255.255.0  |  10.10.40.254  | A4  & B4  |
 |  50 |   10.10.50.1  | 10.10.50.2   |    255.255.255.0  |  10.10.50.254  | A5  & B5  |
 
+## Here are DHCP Server POOL Config.
+* https://github.com/rXchauhan/A-High-Availability-Multi-VLAN-Campus-Network-with-DHCP-DNS-NAT-Security/blob/9a109b22fc80e3d88145b11c38a12868affd51d0/03-%20ScreenShots/Server%20DHCP-PooL.png
+
 
 ## ⚙️ Technologies Used
 ### 🔌Hardware & Tools
@@ -102,13 +105,16 @@
 
 ### Note:- 
 * Now you can see in both case they are pinging with ISPs IP 100.100.100.1
-* But the differnece is that, the route is changing in both case because they have differnet-different Active & Standby in both case. 
+* But the differnece is that, the route is changing in both case because they have differnet-different Active & Standby in both case.
 
 ## 🚀 Test the following:
 * HSRP Active/Standby failover
 * DHCP Auto IP Allocation
 * Internet Ping via NAT
 * VLAn Isolation & Inter-VLAN Communication
+
+## And this is final Topology
+* https://github.com/rXchauhan/A-High-Availability-Multi-VLAN-Campus-Network-with-DHCP-DNS-NAT-Security/blob/9a109b22fc80e3d88145b11c38a12868affd51d0/03-%20ScreenShots/Topology%2C%20Diagram.png
 
 # 📌 If this project helped you, give it a ⭐ on Github!
 
