@@ -72,6 +72,46 @@
 * WAN Network: 100.100.100.0/30
 
 
-## Here I am explaning HSRP failover & more:-
-* 
+## Here are outputs of HSRP *Failover* "before & after" :-
 
+### Before the HSRP failover
+* **In these screenshots you can see how the Host/PC has got IP from DHCP**
+* **How they are pinging with ISP**
+* **And the most imp. "route"**
+
+* VLAN-10 or 20
+* https://github.com/rXchauhan/A-High-Availability-Multi-VLAN-Campus-Network-with-DHCP-DNS-NAT-Security/blob/5db15ec2a15742ed8b0120a5f8ce5d8594589122/03-%20ScreenShots/V.10'PC%20Otpt%20Before%20Act.%20chng.png
+* https://github.com/rXchauhan/A-High-Availability-Multi-VLAN-Campus-Network-with-DHCP-DNS-NAT-Security/blob/5db15ec2a15742ed8b0120a5f8ce5d8594589122/03-%20ScreenShots/V.20's%20PC%20Otpt%20Before%20Act.%20chng.png
+
+* VLAN-30 or 40
+* https://github.com/rXchauhan/A-High-Availability-Multi-VLAN-Campus-Network-with-DHCP-DNS-NAT-Security/blob/5db15ec2a15742ed8b0120a5f8ce5d8594589122/03-%20ScreenShots/V.30's%20PC%20Otpt%20Before%20Act.%20chng.png
+* https://github.com/rXchauhan/A-High-Availability-Multi-VLAN-Campus-Network-with-DHCP-DNS-NAT-Security/blob/5db15ec2a15742ed8b0120a5f8ce5d8594589122/03-%20ScreenShots/V.40's%20PC%20Otpt%20Before%20Act.%20chng.png
+
+### Note:-
+* See the difference between these output VLAN-10 or 20 has same route
+* And VLAN-30 or 40 has same route in the **"tracert"** CMD
+
+### Now after HSRP fail(forcefully shut down VLAN)
+* VLAN-10 or 20 shut down in CoreSW1
+* https://github.com/rXchauhan/A-High-Availability-Multi-VLAN-Campus-Network-with-DHCP-DNS-NAT-Security/blob/5db15ec2a15742ed8b0120a5f8ce5d8594589122/03-%20ScreenShots/V.10'PC%20Otpt%20After%20Act%20chng.png
+* https://github.com/rXchauhan/A-High-Availability-Multi-VLAN-Campus-Network-with-DHCP-DNS-NAT-Security/blob/5db15ec2a15742ed8b0120a5f8ce5d8594589122/03-%20ScreenShots/V.20'PC%20Otpt%20After%20Act%20chng.png
+
+* VLAN-30 or 40 shut down in CoreSW2
+* https://github.com/rXchauhan/A-High-Availability-Multi-VLAN-Campus-Network-with-DHCP-DNS-NAT-Security/blob/5db15ec2a15742ed8b0120a5f8ce5d8594589122/03-%20ScreenShots/V.30'PC%20Otpt%20After%20Act%20chng.png
+* https://github.com/rXchauhan/A-High-Availability-Multi-VLAN-Campus-Network-with-DHCP-DNS-NAT-Security/blob/5db15ec2a15742ed8b0120a5f8ce5d8594589122/03-%20ScreenShots/V.40'PC%20Otpt%20After%20Act%20chng.png
+
+### Note:- 
+* Now you can see in both case they are pinging with ISPs IP 100.100.100.1
+* But the differnece is that route is change in both case because they have differnet-different Active & Standby in both case. 
+
+## 🚀 Test the followinf:
+* HSRP Active/Standby failover
+* DHCP Auto IP Allocation
+* Internet Ping via NAT
+* VLAn Isolation & Inter-VLAN Communication
+
+# 📌 If this project helped you, give it a ⭐ on Github!
+
+
+
+    
